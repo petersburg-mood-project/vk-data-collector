@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  vk-data-collector:
+    image: vk-data-collector
+    build:
+      dockerfile: Dockerfile
+      context: ./
+      target: web-server
+    container_name: vk-data-collector
+    volumes:
+      - .:/app
+    env_file:
+      - environment/db.env
+      - environment/app.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    ports:
+      - "4432:5432"
+    volumes:
+      - .pgdata:/var/lib/postgresql/data
+    env_file:
+      - environment/db.env

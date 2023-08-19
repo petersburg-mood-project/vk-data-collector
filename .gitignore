@@ -1,0 +1,7 @@
+.idea/
+venv/
+environment/
+core/migrations
+.pgdata/
+.DS_Store
+**/__pycache__
