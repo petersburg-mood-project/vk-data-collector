@@ -4,6 +4,7 @@
 
 ## Обзор | Overview
 `vk-data-collector` - это приложение на Django, разработанное в рамках проекта [Прогнозирование социального самочувствия с целью оптимизации функционирования экосистемы городских цифровых сервисов Санкт-Петербурга](https://rscf.ru/project/23-28-10069/). Приложение предназначено для сбора и анализа данных из VKontakte (VK), популярного социального сервиса в России.
+
 `vk-data-collector` is a Django-based application developed as part of the project [Forecasting Social Well-being to Optimize the Ecosystem of Urban Digital Services in St. Petersburg](https://rscf.ru/project/23-28-10069/). The application is designed to collect and analyze data from VKontakte (VK), a popular social networking service in Russia.
 
 ## Установка | Installation
